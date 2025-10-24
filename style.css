@@ -1,0 +1,76 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f7f7f7;
+  color: #222;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 700px;
+  margin: 50px auto;
+  background: white;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+#drop-zone {
+  border: 2px dashed #aaa;
+  border-radius: 10px;
+  padding: 40px;
+  background: #fafafa;
+  cursor: pointer;
+  transition: 0.2s;
+}
+#drop-zone.dragover {
+  border-color: #2e89ff;
+  background: #e9f2ff;
+}
+
+#fileInput {
+  display: none;
+}
+
+#uploadBtn {
+  margin-top: 20px;
+  padding: 10px 25px;
+  background: #2e89ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+#uploadBtn:disabled {
+  background: #999;
+  cursor: not-allowed;
+}
+
+#output {
+  margin-top: 20px;
+  text-align: left;
+}
+.link-item {
+  background: #f2f2f2;
+  padding: 10px;
+  border-radius: 6px;
+  margin-top: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+.link-item a {
+  color: #0077ff;
+  text-decoration: none;
+  word-break: break-all;
+}
+.copy-btn {
+  background: #0077ff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}

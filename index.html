@@ -1,25 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>0x0 Image Uploader</title>
-<style>
-body { font-family: sans-serif; background: #111; color: #eee; text-align: center; padding: 40px; }
-input { display: none; }
-label { background: #444; padding: 10px 20px; border-radius: 6px; cursor: pointer; }
-button { background: #28a745; border: none; padding: 10px 20px; color: white; border-radius: 6px; cursor: pointer; }
-#links { margin-top: 20px; text-align: left; max-width: 600px; margin-inline: auto; }
-a { color: #0af; word-break: break-all; display: block; }
-</style>
+  <meta charset="UTF-8">
+  <title>0x0 Image Uploader</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1>📤 0x0 Image Uploader</h1>
-<label for="fileInput">Select Images</label>
-<input type="file" id="fileInput" multiple accept="image/*">
-<button id="uploadBtn">Upload</button>
-
-<div id="links"></div>
-
-<script src="./script.js"></script>
+  <h1>📤 0x0 Image Uploader</h1>
+  <div class="container">
+    <input type="file" id="fileInput" multiple accept="image/*" hidden>
+    <label for="fileInput">Select Images</label>
+    <button id="uploadBtn">Upload All</button>
+    <div id="links"></div>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>

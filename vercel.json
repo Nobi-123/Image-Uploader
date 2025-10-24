@@ -1,8 +1,8 @@
 {
   "version": 2,
   "builds": [
-    { "src": "index.html", "use": "@vercel/static" },
-    { "src": "upload.js", "use": "@vercel/node" }
+    { "src": "upload.js", "use": "@vercel/node" },
+    { "src": "index.html", "use": "@vercel/static" }
   ],
   "routes": [
     { "src": "/upload", "dest": "/upload.js" },

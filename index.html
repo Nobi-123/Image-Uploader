@@ -1,24 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>0x0.st Image Uploader</title>
-  <link rel="stylesheet" href="style.css" />
+<meta charset="UTF-8">
+<title>0x0 Image Uploader</title>
+<style>
+body { font-family: sans-serif; background: #111; color: #eee; text-align: center; padding: 40px; }
+input { display: none; }
+label { background: #444; padding: 10px 20px; border-radius: 6px; cursor: pointer; }
+button { background: #28a745; border: none; padding: 10px 20px; color: white; border-radius: 6px; cursor: pointer; }
+#links { margin-top: 20px; text-align: left; max-width: 600px; margin-inline: auto; }
+a { color: #0af; word-break: break-all; display: block; }
+</style>
 </head>
 <body>
-  <div class="container">
-    <h1>📤 0x0.st Image Uploader</h1>
+<h1>📤 0x0 Image Uploader</h1>
+<label for="fileInput">Select Images</label>
+<input type="file" id="fileInput" multiple accept="image/*">
+<button id="uploadBtn">Upload</button>
 
-    <div id="drop-zone">
-      <p>Drag & Drop images here<br>or click to select</p>
-      <input type="file" id="fileInput" multiple accept="image/*">
-    </div>
+<div id="links"></div>
 
-    <button id="uploadBtn">Upload Files</button>
-    <div id="output"></div>
-  </div>
-
-  <script src="script.js"></script>
+<script src="./script.js"></script>
 </body>
 </html>
